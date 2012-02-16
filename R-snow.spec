@@ -2,18 +2,18 @@
 %global rlibdir  %{_datadir}/R/library
 
 Name:             R-%{packname}
-Version:          0.3_7
+Version:          0.3_8
 Release:          1
 Summary:          Simple Network of Workstations
 Group:            Sciences/Mathematics
 License:          GPL
-URL:              None
-Source0:          http://cran.r-project.org/src/contrib/Archive/snow/snow_0.3-7.tar.gz
+URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.3-8.tar.gz
 BuildArch:        noarch
 Requires:         R-core
 Requires:         R-utils 
 Requires:         R-Rmpi R-rpvm R-rlecuyer R-rsprng R-nws 
-BuildRequires:    R-devel texlive-collection-latex R-utils
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-utils
 BuildRequires:    R-Rmpi R-rpvm R-rlecuyer R-rsprng R-nws 
 
 %description
@@ -25,7 +25,6 @@ Support for simple parallel computing in R.
 %build
 
 %install
-rm -rf %{buildroot}
 mkdir -p %{buildroot}%{rlibdir}
 %{_bindir}/R CMD INSTALL -l %{buildroot}%{rlibdir} %{packname}
 test -d %{packname}/src && (cd %{packname}/src; rm -f *.o *.so)
