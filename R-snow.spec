@@ -13,8 +13,8 @@ BuildArch:        noarch
 Requires:         R-core
 Requires:         R-utils 
 Requires:         R-Rmpi R-rpvm R-rlecuyer R-rsprng R-nws 
-BuildRequires:    Rmath-devel texlive-collection-latex R-utils
-BuildRequires:   R-Rmpi R-rpvm R-rlecuyer R-rsprng R-nws 
+BuildRequires:    R-devel texlive-collection-latex R-utils
+BuildRequires:    R-Rmpi R-rpvm R-rlecuyer R-rsprng R-nws 
 
 %description
 Support for simple parallel computing in R.
