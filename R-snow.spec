@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          0.3_10
-Release:          1
+Release:          2
 Summary:          Simple Network of Workstations
 Group:            Sciences/Mathematics
 License:          GPL
