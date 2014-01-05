@@ -2,13 +2,13 @@
 %global rlibdir  %{_datadir}/R/library
 
 Name:             R-%{packname}
-Version:          0.3.12
+Version:          0.3.13
 Release:          1
 Summary:          Simple Network of Workstations
 Group:            Sciences/Mathematics
 License:          GPL
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/snow_0.3-12.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/snow_0.3-13.tar.gz
 BuildArch:        noarch
 Requires:         R-core
 Requires:         R-utils 
@@ -53,5 +53,6 @@ _R_CHECK_FORCE_SUGGESTS_=0 %{_bindir}/R CMD check %{packname}
 + Revision: 774661
 - Import R-snow
 - Import R-snow
+
 
 
